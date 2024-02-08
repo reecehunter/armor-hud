@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "armorhud",
+	"version": "${version}",
+	"name": "Goose's Armor HUD",
+	"description": "Displays your armor and its durability next to your hot bar.",
+	"authors": [
+		"GooseTheBoy"
+	],
+	"contact": {
+		"homepage": "https://bosshub.net/",
+		"sources": "https://github.com/reecehunter/armorhud"
+	},
+	"license": "MIT License",
+	"icon": "assets/armorhud/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bosshub.armorhud.ArmorHud"
+		],
+		"client": [
+			"net.bosshub.armorhud.ArmorHudClient"
+		]
+	},
+	"mixins": [
+		"armorhud.mixins.json",
+		{
+			"config": "armorhud.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

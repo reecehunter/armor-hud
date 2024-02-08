@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.bosshub.armorhud.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+	],
+	"client": [
+		"ArmorHudMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
